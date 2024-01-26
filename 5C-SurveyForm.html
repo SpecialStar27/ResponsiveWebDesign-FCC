@@ -1,0 +1,44 @@
+<!-- alt L alt O per visualizzare pagina web -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capodanno 24-25</title>
+    <link rel="stylesheet" href="5C-SurveyForm-styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Sondaggio per il capodanno 24-25</h1>
+    <figure>
+      <img src="https://github.com/MichelleStella/survey-form-CAPODANNO-24-25/blob/main/capodanno.jpg?raw=true" alt="Capodanno a Faido" style="width: 55vw">
+    </figure>
+    <p id="description" class="description"> Questo sondaggio ci aiuterà a organizzare un'altro bellissimo capodanno tutti assieme :) </p>
+    <form id="survey-form"> <!-- add method to collect data -->
+    <label for="name" id="name-label">Come ti chiami ? <input id="name" type="text" required placeholder="Nome.."/></label>
+    <label for="email" id="email-label">Qual'è la tua email ? <input id="email" type="email" placeholder="pincopallino@...." required/> </label>
+    <label for="number" id="number-label">Quanti anni hai?<input id="number" type="number" min="18" max="40" placeholder="anni"/></label>
+    <!-- ################################################# -->
+    <legend>Sarai dei nostri l'anno prossimo ?</legend>
+     <label for="yes"> <input name="next-year-in" type="radio" id="yes" checked class="inline" value="yes"/> Ovvio !! </label>
+    <label for="maybe"> <input name="next-year-in" type="radio" id="maybe" class="inline" value="maybe"> Mi piacerebbe...ma vediamo più in là !  </label>
+    <label for="no"><input name="next-year-in" type="radio" id="no" class="inline" value="no">  No, ma spiass :( </label>
+    <!-- ################################################# -->
+    <label for="dropdown"> In quale location ti piacerebbe passare il prossimo capodanno ?</label>
+    <select id="dropdown">
+      <option value="0">(Seleziona un'opzione)</option>
+      <option value="1">Andare in montagna as usual</option>
+      <option value="2">Stare a casa di qualcuno </option>
+      <option value="3">Andare al mare </option>
+      <option value="4">Andare a visitare una città </option>
+    </select>
+    <legend>Quali attività di piacerebbe fare ? </legend>
+      <label for="spa"><input name="attivita" type="checkbox" id="spa" value="spa"/>  Spa, terme </label>
+      <label for="ciaspole"><input name="attivita" type="checkbox" id="ciaspole" value="ciaspole"/> Cispolata</label>
+      <label for="cook"> <input name="attivita" type="checkbox" id="cook" value="cook"/> Cooking class </label>
+  <label for="commenti"> Altri commenti (suggerimenti, lamentelo etc) <br>
+  <textarea id="commenti" rows="5" cols="30" placeholder="Tutto è perfetto"></textarea> </label>
+    <label for="submit">
+    <input id="submit" type="submit" value="Termina sondaggio"/></label>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+/*definisco variabile per il colore 1*/
+
+:root {
+    --col1: #A259E4;
+    --col2: #C7F0A2;
+  }
+  
+  h1 {
+    margin: 2em auto;
+    text-align: center;
+    color: var(--col1);
+  }
+  
+  figure {
+    text-align: center;
+  }
+  
+  img {
+    border: 4px solid var(--col1);
+  }
+  
+  body {
+    background-color: var(--col2);
+    font-family: system-ui;
+  }
+  
+  .description {
+    text-align: center;
+    font-style: italic;
+    font-size: 12pt;
+  }
+  
+  
+  label, legend, select {
+    display: block;
+    margin: 1em 1em;
+  }
+  
+  /*
+  legend {
+      margin: 1em -0.1em;
+  }
+  
+  
+  input {
+    vertical-align: bottom;
+    margin-left: 0.5em;
+  
+  
+  .inline {
+    vertical-align: bottom;
+    margin-left: 1px;
+  }
+  */

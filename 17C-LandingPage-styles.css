@@ -1,0 +1,186 @@
+:root {
+    --color: #F0E3E3;
+    --color2: #FFF1F1;
+    --header-height: 30px;
+  }
+  
+  html {
+    background-color: var(--color2);
+    /*scroll-padding-top: 100px;*/
+  }
+  
+  body {
+    /* 3 columns */
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 50rem) minmax(2rem, 1fr);
+    grid-template-rows: 3rem;
+  }
+  
+  header {
+    width: 100%;
+    margin: -10px;
+    padding: 10px;
+    grid-column: span 3;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000; 
+    height:  var(--header-height);
+    background-color: pink;
+  }
+  
+  #header-img {
+    grid-column: 1;
+  }
+  
+  #nav-bar {
+    grid-column: 2/-1;
+    margin: auto;
+  }
+  
+  main {
+    margin: 0;
+    padding: 0;
+    margin-top: var(--header-height);
+    grid-row: 2;
+    grid-column: 2 / 3;
+  }
+  
+  #form {
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  ul li{
+    display: inline;
+    margin: 50px;
+  }
+  
+  .footer li {
+    margin: 5px;
+  }
+  
+  #email {
+    font-size: 0.7rem;
+    padding: 4px;
+    padding-right: 100px;
+    margin-bottom: 15px;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  .fa-solid {
+    /* TO DO*/
+    color: orange;
+    font-size: 2.5rem;
+    display: inline;
+  }
+  
+  .boc{
+    margin-top: -35px ;
+    margin-left: 50px;
+  }
+  
+  .category{
+    margin-bottom: 50px;
+  }
+  
+  .boc p {
+    margin-top: -15px;
+  }
+  
+  #How_It_Works{
+    display: flex;
+    justify-content: center;
+  }
+  
+  #Pricing{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .box {
+    border: solid;
+    /*height: 200px;*/
+    width: 250px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding-bottom: 15px;
+  }
+  
+  .box:last-of-type{
+    margin-right: 20px;
+  }
+  
+  .box h1 {
+    background-color: var(--color);
+    margin: 0;
+    font-size: 1rem;
+    padding: 12px 50px;
+  }
+  
+  .box h2, .box p {
+    padding: 0px 75px;
+    line-height: 1.5;
+  }
+  
+  button, #submit {
+    background-color: #FFC107;
+    border: none;
+    padding: 8px 12px;
+  }
+  
+  
+  footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--color);
+    row-gap: 0;
+  }
+  
+  .footer {
+    grid-column-start: -1;
+  }
+  
+  #copyright {
+    margin-top: -10px;
+    color: gray;
+  }
+  
+  @media (max-width: 800px) {
+    nav ul li{
+    display: block;
+    margin: 1px;
+    padding: 2px;
+  }
+    nav ul {
+      margin-top: -10px;
+    }
+  
+  
+    main {
+      overflow-x: hidden;
+      width: 100vw;
+      align-items: center;
+      background-color: red;
+      grid-column: 2;
+    }
+  
+    #Pricing {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .box {
+      margin: 5px;
+    }
+  }
